@@ -1,3 +1,2 @@
 ZindigoAmbassadorCentral
-========================
-This is the first commit to set up the project b.
+This is the first commit to set up the project -- Anuj.
