@@ -1,11 +1,11 @@
-@media (min-width: 980px) and (max-width: 1280px) {  
+@media (min-width: 810px) and (max-width: 1280px) {  
 
 	.page-boxed .header .dropdown .username {
 		display: none;
 	}	
 }
 
-@media (min-width: 980px) { 
+@media (min-width: 810px) { 
 
  	/***
  	Page sidebar
@@ -121,7 +121,7 @@
 /***
 For tablets and phones
 ***/
-@media (max-width:979px) { 
+@media (max-width:809px) { 
 	
 	/***
 	Body
@@ -250,7 +250,7 @@ For tablets and phones
 
 } 
  
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 809px) { 
 
 	/***
 	Body

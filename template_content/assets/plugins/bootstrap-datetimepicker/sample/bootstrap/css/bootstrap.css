@@ -299,7 +299,7 @@ a:hover {
   width: 60px;
 }
 .offset12 {
-  margin-left: 980px;
+  margin-left: 810px;
 }
 .offset11 {
   margin-left: 900px;
@@ -5131,7 +5131,7 @@ button.close {
 .visible-desktop {
   display: inherit !important;
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 809px) {
   .hidden-desktop {
     display: inherit !important;
   }
@@ -5307,7 +5307,7 @@ button.close {
     position: static;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 809px) {
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -5948,7 +5948,7 @@ button.close {
     margin-left: 0;
   }
 }
-@media (max-width: 979px) {
+@media (max-width: 809px) {
   body {
     padding-top: 0;
   }
@@ -6095,7 +6095,7 @@ button.close {
     padding-right: 10px;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 810px) {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
