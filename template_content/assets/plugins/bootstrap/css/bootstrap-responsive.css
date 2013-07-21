@@ -230,7 +230,6 @@
             box-sizing: border-box;
   }
   .row-fluid [class*="span"]:first-child {
-    margin-left: 0;
   }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
     margin-left: 2.564102564102564%;
@@ -580,10 +579,9 @@
             box-sizing: border-box;
   }
   .row-fluid [class*="span"]:first-child {
-    margin-left: 0;
   }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
-    margin-left: 2.7624309392265194%;
+    margin-left: 0;
   }
   .row-fluid .span12 {
     width: 100%;
