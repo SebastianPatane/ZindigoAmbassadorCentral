@@ -1,20 +1,45 @@
 /* Global */
+
+@font-face {
+    font-family: 'bauerbodni_btitalic';
+    src: url('../fonts/bauerbit-webfont.eot');
+    src: url('../fonts/bauerbit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bauerbit-webfont.woff') format('woff'),
+         url('../fonts/bauerbit-webfont.ttf') format('truetype'),
+         url('../fonts/bauerbit-webfont.svg#bauerbodni_btitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro-Demi';
+    src: url('../fonts/AvenirNextLTPro-Demi.eot');
+    src: url('../fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-Demi.ttf') format('truetype'),
+         url('../fonts/AvenirNextLTPro-Demi.svg#bauerbodni_btitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
+	font-family: 'bauerbodni_btitalic', times;
+	font-weight: normal;
 	display: block;
 	border-bottom: 1px solid #000;
 	text-transform: uppercase;
 }
 
 h2 {
+	font-family: 'bauerbodni_btitalic', times;
 	color: #6633CC;
+	line-height: 35px;
 	margin: 0px;
-	font-style: italic;	
 }
 
 h3 {
+	font-family: 'bauerbodni_btitalic', times;
 	color: #6633CC;
 	margin: 0px;
-	font-style: italic;	
 }
 
 h4{
@@ -25,8 +50,25 @@ h4{
 	text-transform: uppercase;
 }
 
+h5 {
+	font-family: 'AvenirNextLTPro-Demi', arial;	
+	color: #6633CC;
+	margin: 0px;
+}
+
+h6 {
+	font-family: 'bauerbodni_btitalic', times;
+	font-size: 20px;
+	margin: 0px 0 5px;
+}
+
+
 p {
 	margin: 0px;	
+}
+
+body {
+	font-family: 'AvenirNextLTPro-Demi', arial;	
 }
 
 .purple {
@@ -95,7 +137,7 @@ p {
 
 .navbar-inner .container-fluid {
 	background: #000;
-	margin: 0px 2%;
+	margin: 0px 1%;
 	padding: 0px;
 }
 
@@ -141,6 +183,9 @@ p {
 	background: #383838;	
 }
 
+.dropdown-menu.extended {
+	padding: 0px;	
+}
 
 /* */
 /* Page Content */
@@ -186,9 +231,39 @@ p {
 }
 
 /* Main Content */
+#dashboard #activity-snap {
+	padding-bottom: 0px;
+}
+
+	#dashboard #activity-snap .block.four {
+		background: url(../images/stripe.jpg);
+		margin: 10px 0px -10px;
+		display: block;
+		height: 23px;	
+	}
+
+		#dashboard #activity-snap .block.four a {
+		    background: none repeat scroll 0 0 #FFFFFF;
+			color: #6633CC;
+			float: right;
+			font-weight: bold;
+			font-size: 11px;
+			margin: 2px 2px 0 0;
+			padding: 2px 5px;
+			text-transform: uppercase;
+		}
+	
 .page-container .page-content{
 	margin-left: 185px;
 }
+
+.page-content.no-sidebar {
+	margin: 0px;	
+}
+
+	.page-content.no-sidebar .container-fluid{
+		padding: 0px;	
+	}
 
 #dashboard {
 	
@@ -201,26 +276,50 @@ p {
 	#dashboard .grey-container {
 		background: #e8e8e8;
 		padding: 10px 0px;
+		line-height: 15px;
 	}
 	
-		#dashboard .grey-container .block.two {
+		#dashboard .grey-container .block {
 			display: inline-block;
-			width: 49%;
 			vertical-align: top;
 		}
 		
-			#dashboard .grey-container .block.two .inner {
+			#dashboard .grey-container .block .inner {
 				padding-left: 10px;
 			}
 		
-			#dashboard .grey-container .block.two textarea {
+			#dashboard .grey-container .block textarea {
 				height: 80px;
 				width: 94%;
+				font-size: 11px;
 			}
 			
+	#dashboard .block {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#dashboard .block.one {
+		width: 35%;
+	}
+
+	#dashboard .block.two {
+		width: 49%;
+	}
+
+	#dashboard .block.three {
+		width: 64%;
+	}
+		
+	#dashboard .block.four {
+		margin: 0 0 10px;
+		width: 100%;
+	}
+		
 	#dashboard .shadow-container {
 		box-shadow: 0px 0px 5px #999;
-		width: 98%;
+		width: 94%;
+		padding: 5px 2%;
 		margin-left: 1%;
 	}
 	
@@ -237,14 +336,14 @@ p {
 	
 	#dashboard .purple-container {
 		border: 1px solid #6633CC;	
-		margin: 0 1%;
+		margin: 0 1% 10px;
 		padding: 2%;
 	}
 	
 		#dashboard .purple-container p{
 			color: #666;	
 			font-size: 15px;
-			font-style: italic;
+			font-family: 'bauerbodni_btitalic', Times;
 		}
 		
 		#dashboard .purple-container p.author{
@@ -252,6 +351,7 @@ p {
 			font-size: 11px;
 			line-height: 15px;
 			text-transform: uppercase;
+			font-family: 'AvenirNextLTPro-Demi', Arial;
 		}
 		
 	#dashboard .dashboard-stat {
@@ -261,11 +361,24 @@ p {
 	#dashboard .row-fluid .span6 {
 		padding: 0 0 0 10px;	
 	}
-
+	
+	#dashboard .tips-holder .holder-row{
+		display: inline-block;
+		vertical-align: top;
+		width: 48%;
+		padding-left: 1%;			
+	}
+	
+	#dashboard .purple-button {
+		float: none;
+		margin: 10px 0px;
+		display: inline-block;	
+	}
+	
 /* Footer */
 #footer {
 	background: url(../images/footer_dots.jpg) repeat-x;
-	margin: 0px 2%;
+	margin: 10px 2% 0px;
 	padding: 18px 0px 30px;	
 }
 
