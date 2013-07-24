@@ -300,10 +300,6 @@ Misc tools
   margin-left: 0px !important
 }
 
-.border {
-  border: 1px solid #ddd
-}
-
 .inline {
   display: inline;
 }
@@ -322,10 +318,6 @@ hr {
 /***
 Header and header elements.
 ***/
-
-.border {
-  border: 1px solid red;
-}
 
 .header {
   padding: 0 !important;

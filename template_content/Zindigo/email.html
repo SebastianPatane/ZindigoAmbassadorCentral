@@ -13,16 +13,14 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <head>
 	<meta charset="utf-8" />
 	<title>Zindigo | Tips &amp; Advice</title>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<meta content="" name="description" />
-	<meta content="" name="author" />
+
 	<!-- BEGIN GLOBAL MANDATORY STYLES -->
 	<link href="../assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 	<link href="../assets/plugins/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css"/>
 	<link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
 	<link href="../assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
 	<link href="../assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
-
+	<link href="../assets/css/jsCarousel.css" rel="stylesheet" type="text/css" />
 	<link href="../assets/css/zindigo.css" rel="stylesheet" type="text/css"/>
 
 	<!-- END GLOBAL MANDATORY STYLES -->
@@ -608,20 +606,132 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                     <h4>Step 1: Select a topic</h4>
                     
-                    <div class="shadow-container dash-row">
-                    	<div class="block two">
-                        	<div class="inner">
-                                <h3>THE DO'S...</h3>
-                                <p>Lorem ipsum dolor sit amet sit wisi eu Suspendisse, Cras, rutrum ad! Consectetuer Mauris adipiscing imperdiet. Dolor turpis volutpat. Lorem ipsum dolor sit amet sit wisi eu Sus Mauris adipiscing imperdiet. Dius, et taciti. Posuere, primis nostra ad dis. Est mattis tellus libero velit.Pellentesque! Vel mollis! Mus. Sodales non elit, rutrum mauris, ad suscipit sagittis Sed.
-								</p>
-							</div>
+                    <div id="email-step-one" class="shadow-container dash-row">
+						<ul class="email-topic">
+                        	<li>
+                            	<a class="dropdown-toggle selected" data-toggle="dropdown" href="#"> General </a>
+                            </li><!-- NOSPACE --><li id="">
+                            	<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Holidays </a>
+                            </li><!-- NOSPACE --><li id="">
+                            	<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Brands </a>
+                            </li><!-- NOSPACE --><li id="">
+                            	<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Special Promotions </a>
+                            </li>
+                        </ul>
+                        
+                        <div id="general-type">
+							<div class="block one">
+                            	<label><input name="general" type="radio" value="View Shop">View General</label>
+                            	<label><input name="general" type="radio" value="View Shop">View General</label>
+                            </div>
+							<div class="block one">
+                            	<label><input name="general" type="radio" value="View Shop">View General</label>
+                            	<label><input name="general" type="radio" value="View Shop">View General</label>
+                            </div>
+							<div class="block one">
+                            	<label><input name="general" type="radio" value="View Shop">View General</label>
+                            	<label><input name="general" type="radio" value="View Shop">View General</label>
+                            </div>
                         </div>
-                    	<div class="block two">
-                        	<div class="inner">
-                                <h3>THE DONT'S...</h3>
-                                <p>Lorem ipsum dolor sit amet sit wisi eu Suspendisse, Cras, rutrum ad! Consectetuer Mauris adipiscing imperdiet. Dolor turpis volutpat. Lorem ipsum dolor sit amet sit wisi eu Sus Mauris adipiscing imperdiet. Dius, et taciti. Posuere, primis nostra ad dis. Est mattis tellus libero velit.Pellentesque! Vel mollis! Mus. Sodales non elit, rutrum mauris, ad suscipit sagittis Sed.
-								</p>
-							</div>
+                        <div id="holiday-type">
+							<div class="block one">
+                            	<label><input name="holiday" type="radio" value="View Shop">View Holiday</label>
+                            	<label><input name="holiday" type="radio" value="View Shop">View Holiday</label>
+                            </div>
+							<div class="block one">
+                            	<label><input name="holiday" type="radio" value="View Shop">View Holiday</label>
+                            	<label><input name="holiday" type="radio" value="View Shop">View Holiday</label>
+                            </div>
+							<div class="block one">
+                            	<label><input name="holiday" type="radio" value="View Shop">View Holiday</label>
+                            	<label><input name="holiday" type="radio" value="View Shop">View Holiday</label>
+                            </div>
+                        </div>
+                        <div id="brand-type">
+							<div class="block one">
+                            	<label><input name="brand" type="radio" value="View Shop">View Brand</label>
+                            	<label><input name="brand" type="radio" value="View Shop">View Brand</label>
+                            </div>
+							<div class="block one">
+                            	<label><input name="brand" type="radio" value="View Shop">View Brand</label>
+                            	<label><input name="brand" type="radio" value="View Shop">View Brand</label>
+                            </div>
+							<div class="block one">
+                            	<label><input name="brand" type="radio" value="View Shop">View Brand</label>
+                            	<label><input name="brand" type="radio" value="View Shop">View Brand</label>
+                            </div>
+                        </div>
+                        <div id="promo-type">
+							<div class="block one">
+                            	<label><input name="promo" type="radio" value="View Shop">View Promo</label>
+                            	<label><input name="promo" type="radio" value="View Shop">View Promo</label>
+                            </div>
+							<div class="block one">
+                            	<label><input name="promo" type="radio" value="View Shop">View Promo</label>
+                            	<label><input name="promo" type="radio" value="View Shop">View Promo</label>
+                            </div>
+							<div class="block one">
+                            	<label><input name="promo" type="radio" value="View Shop">View Promo</label>
+                            	<label><input name="promo" type="radio" value="View Shop">View Promo</label>
+                            </div>
+                        </div>
+                        
+                    </div>                    
+
+                    <h4>Step 2: Select your message</h4>
+                    
+                    <div id="email-step-two" class="shadow-container dash-row">
+						<h5>Grand Opening</h5>
+                        
+                        <div id="jsCarousel">
+                        	<div>
+                            	<img src="../assets/images/placeholder.jpg">
+                            </div>
+                        	<div>
+                            	<img src="../assets/images/placeholder.jpg">
+                            </div>
+                        	<div>
+                            	<img src="../assets/images/placeholder.jpg">
+                            </div>
+                        	<div>
+                            	<img src="../assets/images/placeholder.jpg">
+                            </div>
+                        	<div>
+                            	<img src="../assets/images/placeholder.jpg">
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <h4>Step 3: Choose Contacts</h4>
+                    
+                    <div id="email-step-three" class="shadow-container dash-row">
+						<div class="block two">
+                        	<div class="block two">
+								<a href="#">Email a friend</a>
+                                
+                                <p>OR</p>
+                                <p>import from</p>
+
+								<a href="#">Gmail</a>
+								<a href="#">Yahoo</a>
+								<a href="#">MSN / Live Mail</a>
+								<a href="#">AOL</a>
+								<a href="#">Outlook</a>
+								<a href="#">Mac Contacts</a>
+                                
+                            </div>
+                        	<div class="block two">
+                            	<img src="../assets/images/gmail.jpg">
+                            </div>
+                        </div>
+						<div class="block two">
+                        	<h3>import contacts</h3>
+                            <h5>log in to invite friends</h5>
+                            <form>
+                            <input type="text" value="Enter email">
+                            <input type="text" value="Enter password">
+                            <input type="submit" value="Log In" class="purple-button">
+                            </form>
                         </div>
                     </div>                    
 				</div>
@@ -706,6 +816,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
 	<script src="../assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
 	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/scripts/jsCarousel.js" type="text/javascript"></script>
 	<!--[if lt IE 9]>
 	<script src="../assets/plugins/excanvas.min.js"></script>
 	<script src="../assets/plugins/respond.min.js"></script>  
@@ -719,14 +830,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 		jQuery(document).ready(function() {    
 		   App.init(); // initlayout and core plugins
 
-			$(window).scroll(function() {
-				if ($(window).scrollTop() > 100) {
-					
-				}
-				else {
-					// <= 100px from top - hide div
-				}
-			});
+            $('#jsCarousel').jsCarousel();
 
 		});
 	</script>

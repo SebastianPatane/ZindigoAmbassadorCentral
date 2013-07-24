@@ -1,0 +1,93 @@
+﻿.jscarousal
+{
+	width: 104%;
+	height: 150px;
+	margin: 0 -2%;
+	padding: 0;
+}
+.jscarousal .jscarousal-left {
+	left: 0px;
+	width: 4%;
+	height: 98px;
+	background-color: #121212;
+	color: White;
+	position: absolute;
+	top: 12px;
+	cursor: pointer;
+}
+.jscarousal .jscarousal-right
+{
+	right: 0px;
+	width: 4%;
+	height: 98px;
+	background-color: #121212;
+	color: White;
+	position: absolute;
+	top: 12px;
+	cursor: pointer;
+}
+.jscarousal .jscarousal-right,
+.jscarousal .jscarousal-left {
+	display: none;	
+	z-index: 99;
+	top: 75px;
+	height: 30px;
+}
+
+#email-step-two:hover .jscarousal-right,
+#email-step-two:hover .jscarousal-left {
+	display: block;	
+}
+
+.jscarousal .jscarousal-left
+{
+	background-image: url(left_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.jscarousal .jscarousal-right
+{
+	background-image: url(right_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.jscarousal-contents
+{
+	width: 100%;
+	height: 160px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.jscarousal-contents > div
+{
+	position: absolute;
+	width: 100%;
+	height: 160px;
+}
+.jscarousal-contents > div > div
+{
+	float: left;
+	margin: 0px 3%;
+}
+.jscarousal-contents img
+{
+	max-height: 130px;
+	border: solid 1px #7A7677;
+}
+.hidden
+{
+	display: none;
+}
+.visible
+{
+	display: block;
+}
+.thumbnail-text
+{
+	color: #7A7677;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+	padding: 10px 2px 2px 0px;
+}
