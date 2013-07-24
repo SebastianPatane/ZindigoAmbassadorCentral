@@ -6,8 +6,9 @@
 	padding: 0;
 }
 .jscarousal .jscarousal-left {
+	background:url(../images/left_arrow.jpg);
 	left: 0px;
-	width: 4%;
+	width: 24px;
 	height: 98px;
 	background-color: #121212;
 	color: White;
@@ -15,10 +16,10 @@
 	top: 12px;
 	cursor: pointer;
 }
-.jscarousal .jscarousal-right
-{
+.jscarousal .jscarousal-right {
+	background:url(../images/right_arrow.jpg) 0px 0px;
 	right: 0px;
-	width: 4%;
+	width: 24px;
 	height: 98px;
 	background-color: #121212;
 	color: White;
@@ -28,10 +29,10 @@
 }
 .jscarousal .jscarousal-right,
 .jscarousal .jscarousal-left {
-	display: none;	
+	display: block;	
 	z-index: 99;
 	top: 75px;
-	height: 30px;
+	height: 34px;
 }
 
 #email-step-two:hover .jscarousal-right,
@@ -39,22 +40,10 @@
 	display: block;	
 }
 
-.jscarousal .jscarousal-left
-{
-	background-image: url(left_arrow.jpg);
-	background-repeat: no-repeat;
-	background-position: left;
-}
-.jscarousal .jscarousal-right
-{
-	background-image: url(right_arrow.jpg);
-	background-repeat: no-repeat;
-	background-position: right;
-}
 .jscarousal-contents
 {
 	width: 100%;
-	height: 160px;
+	height: 190px;
 	float: left;
 	position: relative;
 	overflow: hidden;
@@ -63,17 +52,25 @@
 {
 	position: absolute;
 	width: 100%;
-	height: 160px;
 }
 .jscarousal-contents > div > div
 {
 	float: left;
-	margin: 0px 3%;
+	margin: 0px 2%;
+	width: 21%;
+	text-align: center;
+}
+.jscarousal-contents > div > div p
+{
+	margin-top: 2px;
+	line-height: 14px;
+	color: #666;
+	text-align: left;
+	font-size: 11px;
 }
 .jscarousal-contents img
 {
-	max-height: 130px;
-	border: solid 1px #7A7677;
+	max-height: 140px;
 }
 .hidden
 {

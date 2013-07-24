@@ -58,7 +58,7 @@ h4{
 	color: #000;
 	font-size: 14px;	
 	font-family: 'AvenirBold', Arial;
-	margin: 0px 0 0 3px;
+	margin: 0px 0 3px 3px;
 	text-transform: uppercase;
 }
 
@@ -87,13 +87,19 @@ body {
 	font-size: 13px;
 }
 
-input {
+input,
+textarea {
 	border-radius: 0px !important;	
 }
 
 label input[type="radio"] {
 	margin-right: 10px;
 	vertical-align: top;	
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	cursor: pointer;	
 }
 
 .purple {
@@ -139,13 +145,13 @@ label input[type="radio"] {
 #header .header-left {
 	left: 2%;	
 	position: absolute;
-	top: 23px;
+	top: 10px;
 }
 
 #header .header-right {
 	position: absolute;
 	right: 2%;	
-	top: 23px;
+	top: 10px;
 }
 
 #header .logo {
@@ -470,6 +476,7 @@ label input[type="radio"] {
 	padding: 10px 6%;
 	position: relative;
 	width: 86%;
+	height: 210px;
 }
 
 #email-step-three {
@@ -481,13 +488,15 @@ label input[type="radio"] {
 		margin-bottom: 10px;
 	}
 
-	#email-step-three input{
+	#email-step-three input,
+	#email-step-three textarea{
 		color: #000;
 		background: #e8e8e8;
 		font-size: 10px;
 	}
 
 	#email-step-three img{
+		margin-left: 7%;
 		text-align: center;
 	}
 
@@ -506,7 +515,8 @@ label input[type="radio"] {
 			text-transform: uppercase;
 		}
 	
-			#email-step-three .block.two a:hover{
+			#email-step-three .block.two a:hover,
+			#email-step-three .block.two a.selected{
 				color: #947CC3;
 				text-decoration: none;
 			}
@@ -623,4 +633,28 @@ label input[type="radio"] {
     text-align: center;
     width: 50px;
     z-index: 99;
+}
+
+
+@media (min-width: 1000px) {
+	.page-container,
+	.header,
+	#footer {
+		width: 1000px;
+		margin-left: auto;	
+		margin-right: auto;	
+		position: relative;
+	}
+	
+	#header .header-left {
+		left: 0px;	
+	}
+
+	#header .header-right {
+		right: 0px;	
+	}
+	
+	.navbar-inner .container-fluid {
+		margin: 0px;	
+	}
 }

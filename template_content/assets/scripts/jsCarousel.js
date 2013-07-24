@@ -5,7 +5,7 @@
             var settings = $.extend({
                 scrollspeed: 500,
                 delay: 5000,
-                itemstodisplay: 3,
+                itemstodisplay: 4,
                 autoscroll: false,
                 onthumbnailclick: null
             }, options);
