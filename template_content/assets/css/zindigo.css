@@ -2,21 +2,28 @@
 
 @font-face {
     font-family: 'bauerbodni_btitalic';
-    src: url('../fonts/bauerbit-webfont.eot');
-    src: url('../fonts/bauerbit-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bauerbit-webfont.woff') format('woff'),
-         url('../fonts/bauerbit-webfont.ttf') format('truetype'),
-         url('../fonts/bauerbit-webfont.svg#bauerbodni_btitalic') format('svg');
+    src: url('../fonts/bauerbit.eot');
+    src: url('../fonts/bauerbit.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bauerbit.woff') format('woff'),
+         url('../fonts/bauerbit.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'AvenirNextLTPro-Demi';
-    src: url('../fonts/AvenirNextLTPro-Demi.eot');
-    src: url('../fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/AvenirNextLTPro-Demi.ttf') format('truetype'),
-         url('../fonts/AvenirNextLTPro-Demi.svg#bauerbodni_btitalic') format('svg');
+    font-family: 'AvenirRoman';
+    src: url('../fonts/avenir_roman.eot');
+    src: url('../fonts/avenir_roman.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir_roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirBold';
+    src: url('../fonts/avenir_bold.eot');
+    src: url('../fonts/avenir_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir_bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,6 +31,7 @@
 h1 {
 	font-family: 'bauerbodni_btitalic', times;
 	font-weight: normal;
+	font-style: italic;
 	display: block;
 	border-bottom: 1px solid #000;
 	text-transform: uppercase;
@@ -31,33 +39,40 @@ h1 {
 
 h2 {
 	font-family: 'bauerbodni_btitalic', times;
+	font-style: italic;
 	color: #6633CC;
 	line-height: 35px;
 	margin: 0px;
+	text-transform: uppercase;
 }
 
 h3 {
 	font-family: 'bauerbodni_btitalic', times;
+	font-style: italic;
 	color: #6633CC;
 	margin: 0px;
+	text-transform: uppercase;
 }
 
 h4{
 	color: #000;
 	font-size: 14px;	
-	font-weight: bold;
-	margin: 0px;
+	font-family: 'AvenirBold';
+	margin: 0px 0 0 3px;
 	text-transform: uppercase;
 }
 
 h5 {
-	font-family: 'AvenirNextLTPro-Demi', arial;	
+	font-family: 'AvenirRoman', arial;	
 	color: #6633CC;
 	margin: 0px;
+	text-transform: uppercase;
+	font-size: 12px;
 }
 
 h6 {
 	font-family: 'bauerbodni_btitalic', times;
+	font-style: italic;
 	font-size: 20px;
 	margin: 0px 0 5px;
 }
@@ -68,7 +83,8 @@ p {
 }
 
 body {
-	font-family: 'AvenirNextLTPro-Demi', arial;	
+	font-family: 'AvenirRoman', arial;	
+	font-size: 13px;
 }
 
 .purple {
@@ -81,7 +97,7 @@ body {
     color: #000000;
     padding: 0px 10px;
     font-size: 10px;
-    font-weight: bold;
+    font-family: 'AvenirBold';
     text-transform: uppercase;
     float: right;
 }
@@ -98,7 +114,7 @@ body {
 
 #header .invite {
 	text-align: right;
-	font-weight: bold;	
+	font-family: 'AvenirBold';	
 }
 
 #header .header-left {
@@ -145,19 +161,24 @@ body {
 	margin: 0px;
 	position: relative;	
 	width: 100%;
+	background: #fff;
 }
 
 .navbar .nav.pull-right li.dropdown{
-	margin: 0px;	
-	padding: 0px;
-	width: 25%;
+	background: #000;
+    display: inline-block;
+    float: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 25%;
 }
 
 .header .nav > li.dropdown .dropdown-toggle{
 	border: 1px solid #fff;
 	color: #fff;
 	font-size: 11px;
-	font-weight: bold;
+	font-family: 'AvenirBold';
 	padding: 0px 10px;
 	text-align: center;
 }
@@ -172,7 +193,7 @@ body {
 	background: #000;
 	color: #fff;
 	font-size: 11px;
-	font-weight: bold;
+	font-family: 'AvenirBold';
 	padding: 2px 10px;	
 	text-align: center;
 	text-transform:uppercase;
@@ -203,7 +224,7 @@ body {
 .page-container ul.page-sidebar-menu li a{
 	color: #fff;
 	font-size: 10px;
-	font-weight: bold;
+	font-family: 'AvenirBold';
 	padding: 0px 8px;
 	text-transform: uppercase;	
 }
@@ -246,7 +267,7 @@ body {
 		    background: none repeat scroll 0 0 #FFFFFF;
 			color: #6633CC;
 			float: right;
-			font-weight: bold;
+			font-family: 'AvenirBold';
 			font-size: 11px;
 			margin: 2px 2px 0 0;
 			padding: 2px 5px;
@@ -319,7 +340,7 @@ body {
 	#dashboard .shadow-container {
 		box-shadow: 0px 0px 5px #999;
 		width: 94%;
-		padding: 5px 2%;
+		padding: 10px 2%;
 		margin-left: 1%;
 	}
 	
@@ -328,6 +349,10 @@ body {
 			margin: 3% 0px;
 			padding: 0px 4%;
 			width: 41%;
+		}
+	
+		#dashboard .shadow-container img {
+			max-width: 95%;
 		}
 	
 		#dashboard .shadow-container .block.two:first-child {
@@ -341,9 +366,15 @@ body {
 	}
 	
 		#dashboard .purple-container p{
+			font-family: 'AvenirRoman', Arial;
+		}
+		
+		#dashboard .purple-container p.quote{
 			color: #666;	
-			font-size: 15px;
 			font-family: 'bauerbodni_btitalic', Times;
+			font-style: italic;
+			font-size: 17px;
+			padding: 10px;
 		}
 		
 		#dashboard .purple-container p.author{
@@ -351,7 +382,7 @@ body {
 			font-size: 11px;
 			line-height: 15px;
 			text-transform: uppercase;
-			font-family: 'AvenirNextLTPro-Demi', Arial;
+			padding: 0px 10px 0px;
 		}
 		
 	#dashboard .dashboard-stat {
@@ -450,7 +481,7 @@ body {
 	
 			#footer .footer-bottom ul li.head{
 				color: #6633cc;
-				font-weight: bold;
+				font-family: 'AvenirBold';
 			}
 	
 				#footer .footer-bottom ul li a{
