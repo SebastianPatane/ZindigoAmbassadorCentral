@@ -48,8 +48,6 @@ ul.page-sidebar-menu > li:hover > a {
   background: #303030;
 }
 ul.page-sidebar-menu > li.active > a {
-  background: #e02222 !important;
-  border-top-color: transparent !important;
   color: #ffffff;
 }
 ul.page-sidebar-menu > li.active > a i {

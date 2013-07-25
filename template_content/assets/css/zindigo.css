@@ -35,6 +35,7 @@ h1 {
 	display: block;
 	border-bottom: 1px solid #000;
 	text-transform: uppercase;
+	cursor: default;
 }
 
 h2 {
@@ -44,6 +45,7 @@ h2 {
 	line-height: 35px;
 	margin: 0px;
 	text-transform: uppercase;
+	cursor: default;
 }
 
 h3 {
@@ -52,6 +54,7 @@ h3 {
 	color: #6633CC;
 	margin: 0px;
 	text-transform: uppercase;
+	cursor: default;
 }
 
 h4{
@@ -60,6 +63,7 @@ h4{
 	font-family: 'AvenirBold', Arial;
 	margin: 0px 0 3px 3px;
 	text-transform: uppercase;
+	cursor: default;
 }
 
 h5 {
@@ -68,6 +72,7 @@ h5 {
 	margin: 0px;
 	text-transform: uppercase;
 	font-size: 12px;
+	cursor: default;
 }
 
 h6 {
@@ -75,6 +80,7 @@ h6 {
 	font-style: italic;
 	font-size: 20px;
 	margin: 0px 0 5px;
+	cursor: default;
 }
 
 
@@ -124,7 +130,11 @@ a:hover, a:focus {
 }
 
 .dropdown-toggle.selected {
-	color: #947CC3;	
+	color: #cc99ff;	
+}
+
+.hide {
+	display: none;	
 }
 
 /* Header */
@@ -208,19 +218,23 @@ a:hover, a:focus {
 	text-align: center;
 }
 
+	.header .nav > li.dropdown .dropdown-toggle.selected{
+		color: #cc99ff;
+	}
+
 	.header .nav > li.dropdown .dropdown-toggle:hover,
 	.dropdown-menu.extended li a:hover,
 	ul.page-sidebar-menu > li > a:hover,
 	ul.page-sidebar-menu > li:hover > a,
 	.email-topic li a:hover  {
 		background: #000;
-		color: #947CC3 !important;	
+		color: #cc99ff !important;	
 		text-decoration: none;
 	}
 	
 	.page-container ul.page-sidebar-menu li ul li a:hover {
 		background: #fff !important;
-		color: #947CC3 !important;	
+		color: #cc99ff !important;	
 	}
 	
 .dropdown-menu.extended {
@@ -268,6 +282,10 @@ a:hover, a:focus {
 .page-container ul.page-sidebar-menu > li.active > a {
 	background: #000 !important;
 	color: #cc99ff !important;
+}
+
+.page-container ul.page-sidebar-menu > li.active ul {
+	display: block;
 }
 
 .page-container ul.page-sidebar-menu li ul{
@@ -493,6 +511,7 @@ a:hover, a:focus {
 		color: #000;
 		background: #e8e8e8;
 		font-size: 10px;
+		display: block;
 	}
 
 	#email-step-three img{
@@ -517,14 +536,14 @@ a:hover, a:focus {
 	
 			#email-step-three .block.two a:hover,
 			#email-step-three .block.two a.selected{
-				color: #947CC3;
+				color: #cc99ff;
 				text-decoration: none;
 			}
 		
 		#email-step-three .block.two p{
 			color: #999;
 			font-family: 'bauerbodni_btitalic', Times;
-			font-size: 10px;
+			font-size: 11px;
 			font-style: italic;
 			padding: 0px 5px;
 		}
@@ -553,6 +572,7 @@ a:hover, a:focus {
 		#footer .footer-top .stay-connected {
 			display: inline-block;
 			padding: 0px 0px 0px 10px;	
+			width: 300px;
 		}
 		
 			#footer .footer-top .stay-connected label,
@@ -561,6 +581,8 @@ a:hover, a:focus {
 			}
 			
 			#footer .footer-top .stay-connected label {
+				cursor: default;
+				font-family: 'AvenirBold', Arial;
 				margin: 0px;	
 			}
 			
@@ -568,7 +590,7 @@ a:hover, a:focus {
 				height: 17px;
 				margin: 0 0 6px;	
 				padding: 0px 17px 0px 0;
-				width: 165px;
+				width: 187px;
 			}
 			
 			#footer .footer-top .stay-connected #email-submit {
@@ -583,8 +605,12 @@ a:hover, a:focus {
 			
 		#footer .footer-top .follow-us {
 			float: right;
-			margin: 13px 10px;
+			margin: 13px 0px;
 		}
+
+			#footer .footer-top .follow-us span {
+				padding-right: 10px;
+			}
 
 	#footer .footer-bottom {
 		padding: 0px 10px;
