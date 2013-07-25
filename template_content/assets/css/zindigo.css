@@ -517,6 +517,7 @@ a:hover, a:focus {
 	#email-step-three img{
 		margin-left: 7%;
 		text-align: center;
+		max-height: 100%;
 	}
 
 	#email-step-three .block.two{
