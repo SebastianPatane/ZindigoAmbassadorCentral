@@ -77,4 +77,16 @@
 		$("#add-friend").hide();		
 	});
 	
+	
+	$("#activity-shrink a").click(function(){
+		$("#activity-shrink").hide();
+		$("#activity-show").show();
+		$("#activity-snap .block.two").hide();
+	});
+	$("#activity-show a").click(function(){
+		$("#activity-show").hide();
+		$("#activity-shrink").show();
+		$("#activity-snap .block.two").show();
+	});
+	
 })(jQuery);
