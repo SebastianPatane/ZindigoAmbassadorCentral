@@ -772,8 +772,13 @@ a:hover, a:focus {
 		display: inline-block;
 	}
 	
+	#header .header-left .header-icons,
+	#header .header-left .welcome {
+		width: 145px;
+	}
+	
 	#header .header-left {
-		width: 130px;
+		width: 140px;
 		line-height: 12px;	
 	}
 	
@@ -829,6 +834,11 @@ a:hover, a:focus {
 	#email-step-three input, #email-step-three textarea {
 		width: 90%;	
 	}
+	
+	.dropdown:last-child ul{
+		left: auto !important;
+		right: 0px !important;
+	}	
 }
 
 @media (max-width: 480px) { 
