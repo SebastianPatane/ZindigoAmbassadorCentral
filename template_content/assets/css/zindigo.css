@@ -816,7 +816,7 @@ a:hover, a:focus {
 	}
 	
 	#dashboard .email-topic li a {
-		height: 45px;	
+		line-height: 45px;	
 	}
 	
 	#footer .footer-top .follow-us {
@@ -846,6 +846,12 @@ a:hover, a:focus {
 		left: auto !important;
 		right: 0px !important;
 	}	
+	
+	#promo-email > span {
+		display: inline-block;
+		line-height: 10px;
+		vertical-align: middle;	
+	}
 }
 
 @media (max-width: 480px) { 
