@@ -516,6 +516,7 @@ a:hover, a:focus {
 		margin: 10px 0px;
 		display: inline-block;	
 		color: #000;
+		line-height: 13px;
 	}
 
 .email-topic {
@@ -526,6 +527,7 @@ a:hover, a:focus {
 		background: #000;
 		display: inline-block;
 		width: 25%;
+		vertical-align: top;
 	}
 		#dashboard .email-topic li a{
 			border-right: 1px solid #999999;
@@ -747,3 +749,94 @@ a:hover, a:focus {
 		margin: 0px;	
 	}
 }
+
+@media (max-width: 809px) {
+	
+	#header .invite {
+		text-align: left;
+	}
+	
+	#header > div {
+		display: block;
+		position: static !important;
+		width: 75%;
+		margin: 0 auto;
+	}
+	
+	#header .welcome,
+	#header .invite {
+		text-align: center;
+	}
+	
+	#header .header-left > div{
+		display: inline-block;
+	}
+	
+	#header .header-left {
+		width: 130px;
+		line-height: 12px;	
+	}
+	
+	#header > div.logo {
+		display: block;
+		margin: 10px auto;
+		position: relative !important;
+	}
+	
+	.header .nav > li.dropdown .dropdown-toggle {
+		height: 43px;	
+	}
+	
+	.page-container .page-sidebar {
+		display: none;	
+	}
+	
+	.page-container .page-content {
+		margin: 0px;	
+	}
+
+	.page-container .page-content .container-fluid {
+		padding: 0px;	
+	}
+	
+	#dashboard .grey-container .block.three {
+		width: 100%;	
+	}
+	
+	#dashboard .email-topic li a {
+		height: 45px;	
+	}
+	
+	#footer .footer-top .follow-us {
+		float: none;
+		margin-left: 10px;	
+	}
+	
+	#footer .footer-bottom ul {
+		width: auto;
+		padding: 10px 0px;	
+		width: 100%;
+	}
+	
+	#email-step-three {
+		height: 269px;	
+	}
+	
+	.page-container {
+		margin-top: 20px !important;	
+	}
+	
+	#email-step-three input, #email-step-three textarea {
+		width: 90%;	
+	}
+}
+
+@media (max-width: 480px) { 
+	.header .nav > li.dropdown .dropdown-toggle,
+	#dashboard .email-topic li a {
+		font-size: 8px;
+	}
+}
+
+
+
