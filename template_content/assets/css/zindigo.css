@@ -789,7 +789,14 @@ a:hover, a:focus {
 	}
 	
 	.header .nav > li.dropdown .dropdown-toggle {
-		height: 43px;	
+		line-height: 43px;	
+		padding: 0px;
+	}
+	
+	.header .nav > li.dropdown .dropdown-toggle span {
+		display: inline-block;
+		line-height: 12px;
+		vertical-align: middle;
 	}
 	
 	.page-container .page-sidebar {
@@ -843,7 +850,8 @@ a:hover, a:focus {
 
 @media (max-width: 480px) { 
 	.header .nav > li.dropdown .dropdown-toggle,
-	#dashboard .email-topic li a {
+	#dashboard .email-topic li a,
+	.dropdown-menu.extended li a, .dropdown-menu.extended li a:hover {
 		font-size: 8px;
 	}
 }
